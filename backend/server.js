@@ -22,7 +22,6 @@ app.use(
 );
 
 app.use(express.json({ limit: "10mb" }));
-app.options("*", cors());
 
 // ================= ROUTES =================
 app.use("/api/auth", authRoutes);
