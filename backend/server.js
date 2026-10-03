@@ -16,10 +16,7 @@ connectDB();
 // ================= MIDDLEWARE =================
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173",
-      "https://YOUR-NETLIFY-SITE.netlify.app",
-    ],
+    origin: "http://localhost:5173",
     credentials: true,
   })
 );
