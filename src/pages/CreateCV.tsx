@@ -833,8 +833,8 @@ function CreateCV() {
       // -------------------------------------------------------
 
       const url = existingCVId
-        ? `http://localhost:5000/api/cvs/${existingCVId}`
-        : "http://localhost:5000/api/cvs";
+        ? `https://cvforge-production-a933.up.railway.app/api/cvs/${existingCVId}`
+        : "https://cvforge-production-a933.up.railway.app/api/cvs";
 
       const method = existingCVId
         ? "PUT"

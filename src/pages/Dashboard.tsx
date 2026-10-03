@@ -93,7 +93,7 @@ const Dashboard: React.FC = () => {
         // =====================================================
 
         const userResponse = await fetch(
-          "http://localhost:5000/api/auth/me",
+          "https://cvforge-production-a933.up.railway.app/api/auth/me",
           {
             method: "GET",
             headers: {
@@ -127,7 +127,7 @@ const Dashboard: React.FC = () => {
         // =====================================================
 
         const cvResponse = await fetch(
-          "http://localhost:5000/api/cvs",
+          "https://cvforge-production-a933.up.railway.app/api/cvs",
           {
             method: "GET",
             headers: {
@@ -296,7 +296,7 @@ const Dashboard: React.FC = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/cvs/${deleteCVId}`,
+        `https://cvforge-production-a933.up.railway.app/api/cvs/${deleteCVId}`,
         {
           method: "DELETE",
           headers: {

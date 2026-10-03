@@ -41,7 +41,7 @@ function Login() {
       setLoading(true);
 
       const response = await fetch(
-        "http://localhost:5000/api/auth/login",
+        "https://cvforge-production-a933.up.railway.app/api/auth/login",
         {
           method: "POST",
           headers: {
